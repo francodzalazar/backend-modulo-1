@@ -81,7 +81,7 @@ class Product {
     }
 }
 
-let a = new ProductManager("datos.json");
+let a = new ProductManager("data.json");
 a.addProduct({ title: "a", description: "a", price: "a", thumbnail: "a", code: "a", stock: "a" });
 a.addProduct({ title: "b", description: "b", price: "b", thumbnail: "b", code: "a", stock: "b" });
 a.addProduct({ title: "c", description: "c", price: "c", thumbnail: "c", code: "c", stock: "c" });
