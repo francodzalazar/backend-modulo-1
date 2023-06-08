@@ -81,7 +81,7 @@ class Product {
     }
 }
 
-let a = new ProductManager("data.json");
+let a = new ProductManager("products.json");
 a.addProduct({ title: "a", description: "a", price: "a", thumbnail: "a", code: "a", stock: "a" });
 a.addProduct({ title: "b", description: "b", price: "b", thumbnail: "b", code: "a", stock: "b" });
 a.addProduct({ title: "c", description: "c", price: "c", thumbnail: "c", code: "c", stock: "c" });
@@ -89,5 +89,4 @@ console.log(a);
 console.log(a.getProductsById(2));
 a.updateProduct(2, { title: "Producto", price: "Nuevo precio" });
 console.log(a.getProducts());
-a.deleteProduct(1);
-console.log(a.getProducts());
+

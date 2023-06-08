@@ -1,0 +1,20 @@
+[
+	{
+		"title": "a",
+		"description": "a",
+		"price": "a",
+		"thumbnail": "a",
+		"code": "a",
+		"stock": "a",
+		"id": 1
+	},
+	{
+		"title": "Producto",
+		"description": "c",
+		"price": "Nuevo precio",
+		"thumbnail": "c",
+		"code": "c",
+		"stock": "c",
+		"id": 2
+	}
+]
