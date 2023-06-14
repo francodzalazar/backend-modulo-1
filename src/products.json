@@ -1,20 +1,29 @@
 [
 	{
-		"title": "a",
-		"description": "a",
-		"price": "a",
+		"title": "Teclado",
+		"description": "mecanico",
+		"price": "4000",
 		"thumbnail": "a",
 		"code": "a",
-		"stock": "a",
+		"stock": "5",
 		"id": 1
 	},
 	{
-		"title": "Producto",
-		"description": "c",
-		"price": "Nuevo precio",
+		"title": "Mouse",
+		"description": "mouse color",
+		"price": "6500",
+		"thumbnail": "b",
+		"code": "b",
+		"stock": "8",
+		"id": 2
+	},
+	{
+		"title": "Auricular",
+		"description": "gamer",
+		"price": "8000",
 		"thumbnail": "c",
 		"code": "c",
-		"stock": "c",
-		"id": 2
+		"stock": "4",
+		"id": 3
 	}
 ]

@@ -1,4 +1,4 @@
-const fs = require("fs");
+import fs from 'fs';
 
 class ProductManager {
     constructor(path) {
@@ -27,7 +27,6 @@ class ProductManager {
         const data = JSON.stringify(this.products, null, '\t');
         try {
             fs.writeFileSync(this.path, data, { flag: 'w' });
-            console.log('Archivo guardado correctamente.');
         } catch (error) {
             console.error('Error al guardar el archivo:', error);
         }
@@ -51,7 +50,7 @@ class ProductManager {
             const index = this.products.indexOf(productToUpdate);
             this.products[index] = updatedProduct;
             this.saveData();
-            console.log(`Producto con ID ${id} actualizado correctamente.`);
+            console.log(`Producto con ID ${id} actualizado.`);
         } else {
             console.log(`No se encontró ningún producto con ID ${id}.`);
         }
@@ -62,7 +61,7 @@ class ProductManager {
         if (productIndex !== -1) {
             this.products.splice(productIndex, 1);
             this.saveData();
-            console.log(`Producto con ID ${id} eliminado correctamente.`);
+            console.log(`Producto con ID ${id} eliminado.`);
         } else {
             console.log(`No se encontró ningún producto con ID ${id}.`);
         }
@@ -82,11 +81,10 @@ class Product {
 }
 
 let a = new ProductManager("products.json");
-a.addProduct({ title: "a", description: "a", price: "a", thumbnail: "a", code: "a", stock: "a" });
-a.addProduct({ title: "b", description: "b", price: "b", thumbnail: "b", code: "a", stock: "b" });
-a.addProduct({ title: "c", description: "c", price: "c", thumbnail: "c", code: "c", stock: "c" });
-console.log(a);
-console.log(a.getProductsById(2));
-a.updateProduct(2, { title: "Producto", price: "Nuevo precio" });
-console.log(a.getProducts());
+a.addProduct({ title: "Teclado", description: "mecanico", price: "4000", thumbnail: "a", code: "a", stock: "5" });
+a.addProduct({ title: "Mouse", description: "mouse color", price: "6500", thumbnail: "b", code: "b", stock: "8" });
+a.addProduct({ title: "Auricular", description: "gamer", price: "8000", thumbnail: "c", code: "c", stock: "4" });
 
+
+
+export default ProductManager;
